@@ -1,4 +1,5 @@
 import math
+from math import cos
 
 """
 ***************************************************************
@@ -121,22 +122,48 @@ pizza
 
 
 class Restaurante:
-    def __init__ (self):
 
-        def ordenar(self,nombre,lugar,costo,conDescuento,descuento):
-            pass
+    def __init__(self):
+        nombre = ()
+        lugar = ()
+        costo = ()
+        conDescuento = ()
+        descuento = ()
 
-        def costoTotal(self):
-            return 0
 
-        def costoTotalConDescuento(self):
+    def ordenar(self,nombre,lugar,costo,conDescuento,descuento):
+        pass
+            
+
+    def costoTotal(self,costo):
+        result = Pizza.sumaCostos(costo)
+        return result
+
+    def costoTotalConDescuento(self,costo):
             return 0
 
 
 class Pizza:
     def __init__(self):
+        nombre= ()
+        lugar=()
+        costo = ()
+        conDescuento = ()
+        descuento = ()
+    
+    def sumaCostos(self,costo):
+        listCosto = []
+        sumaMoney =float(0)
+        listCosto.append(costo)
+        for money in listCosto:
+            sumaMoney += money
+            result = sumaMoney
+            return result
+    
+        
+    def sumaConDescuento(self,costo,conDescuento,descuento):
         pass
-
+    
 
 """
 ***************************************************************
